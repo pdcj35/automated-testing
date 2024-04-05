@@ -1,0 +1,45 @@
+API Test - Pablo Calderón J.
+
+1. Scenario: Sign Up Success
+	• url: https://api.demoblaze.com/signup
+	• request: {"username": "Test_user023","password": "TestPsw"}
+	• error message: null
+	• HTTP response: 200
+	• result: verified
+	• evidence: 03_SingUpSuccess.png
+
+2. Scenario: Sign Up Duplicate
+	• url: https://api.demoblaze.com/signup
+	• request: {"username": "Test_user023","password": "TestPsw"}
+	• error message: "This user already exist."
+	• HTTP response: 200
+	• result: verified
+	• evidence: 04_SingUpDuplicate.png
+
+3. Scenario: Log In Wrong Username
+	• url: https://api.demoblaze.com/login
+	• request: {"username": "Test_user20","password": "TestPsw"}
+	• error message: "User does not exist."
+	• HTTP response: 200
+	• result: verified
+	• evidence: 05_LogInWrongUser.png
+
+4. Scenario: Log In Wrong Password
+	• url: https://api.demoblaze.com/login
+	• request: {"username": "Test_user023","password": "TestPs00"}
+	• error message: "Wrong password."
+	• HTTP response: 200
+	• result: verified
+	• evidence: 06_LogInWrongPassword.png
+
+5. Scenario: Log In Success
+	• url: https://api.demoblaze.com/login
+	• request: {"username": "Test_user023","password": "TestPsw"}
+	• error message: null
+	• HTTP response: 200
+	• result: verified
+	• evidence: 07_LogInSuccess.png
+
+The evidence could be find at: \evidence
+The results summary could be find at: \target\karate-reports\karate-summary.html 
+The simulation result could be find at: \target\karate.txt

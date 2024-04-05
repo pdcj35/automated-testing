@@ -1,0 +1,23 @@
+e2e Test - Pablo Calderón J.
+url site:  https://www.demoblaze.com/
+
+• Get the website
+	Result: Verified
+	Evidence: 01_WebSite.png
+• Add the first item to cart
+	Result: Verified
+	Evidence: 02_Item1Added.png
+• Add the second item to cart
+	Result: Verified
+	Evidence: 03_Item2Added.png
+• Visualize the cart
+	Result: Verified
+	Evidence: 04_Cart.png
+• Complete the form
+	Result: Verified
+	Evidence: 05_FormCompleted.png
+• Confirm purchase:
+	Result: Verified
+	Evidence: 06_PurchaseCompleted.png
+
+The website pass the test without bugs, the complete process could be revised in "e2e_AutomatedTest.mp4"
