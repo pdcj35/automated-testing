@@ -13,7 +13,7 @@ Feature: APITest
     |CC02    |sourceCurrency|currencyA|targetCurrency|         |specificDate|01/01/2020|null        |"Enter a valid source Currency"|
     |CC03    |sourceCurrency|         |targetCurrency|currencyB|specificDate|01/01/2020|null        |"Enter a valid target Currency"|
     |CC04    |sourceCurrency|         |targetCurrency|         |specificDate|01/01/2020|null        |"Currency fields are empty"    |
-    |CC05    |sourceCurrency|currencyA|targetCurrency|currencyB|specificDate|          |null        |"Enter a valid date"           |
+    |CC05    |sourceCurrency|currencyA|targetCurrency|currencyB|specificDate|          |null        |"Date field is empty"          |
     |CC06    |sourceCurrency|currencyA|targetCurrency|wrongB   |specificDate|01/01/2020|null        |"Enter a valid source Currency"|
     |CC07    |sourceCurrency|wrongA   |targetCurrency|currencyB|specificDate|01/01/2020|null        |"Enter a valid target Currency"|
     |CC08    |sourceCurrency|wrongA   |targetCurrency|wrongB   |specificDate|01/01/2020|null        |"Currency fields are invalid"  |
